@@ -1,0 +1,258 @@
+<script>
+
+/**************************************************/
+// USERS
+/**************************************************/
+new Chart(document.getElementById("users"), {
+  type: 'line',
+  data: {
+    labels: datelabel,
+    datasets: [{
+        data: pokerusers,
+        label: "EOS POKER",
+        borderColor: "#3e95cd",
+        fill: false
+      }, {
+        data: diceusers,
+        label: "BetDICE",
+        borderColor: "#8e5ea2",
+        fill: false
+      }, {
+        data: betusers,
+        label: "EOS BET",
+        borderColor: "#3cba9f",
+        fill: false
+      }
+    ]
+  },
+  options: {
+    legend: {
+      position: 'bottom',
+    },
+    scales: {
+            xAxes: [{
+                type: 'time',
+                distribution: 'linear',
+                gridLines: {
+                    display: true ,
+                    color: "#333",
+                    LineWidth: 0.1
+                          },
+                time: {
+                    displayFormats: {
+                        day: 'MMM D'
+                    }
+                }
+            }]
+,yAxes: [{
+  gridLines: {
+      display: true ,
+      color: "#333",
+      LineWidth: 0.1
+            },
+  ticks: {
+                  // Include a dollar sign in the ticks
+                  callback: function(value, index, values) {
+                      return value;
+                  }
+              }
+
+}]
+
+        },
+    title: {
+      display: true,
+      fontSize: 18,
+      text: 'Daily Users'
+    }
+  }
+});
+/**************************************************/
+// VOLUME
+/**************************************************/
+new Chart(document.getElementById("volume"), {
+  type: 'line',
+  data: {
+    labels: datelabel,
+    datasets: [{
+        data: pokervolume,
+        label: "EOS POKER",
+        borderColor: "#3e95cd",
+        fill: false
+      }, {
+        data: dicevolume,
+        label: "BetDICE",
+        borderColor: "#8e5ea2",
+        fill: false
+      }, {
+        data: betvolume,
+        label: "EOS BET",
+        borderColor: "#3cba9f",
+        fill: false
+      }
+    ]
+  },
+  options: {
+    legend: {
+      position: 'bottom',
+    },
+    scales: {
+            xAxes: [{
+                type: 'time',
+                distribution: 'linear',
+                gridLines: {
+                    display: true ,
+                    color: "#333",
+                    LineWidth: 0.1
+                          },
+                time: {
+                    displayFormats: {
+                        day: 'MMM D'
+                    }
+                }
+            }]
+,yAxes: [{
+  gridLines: {
+      display: true ,
+      color: "#333",
+      LineWidth: 0.1
+            },
+  ticks: {
+                  // Include a dollar sign in the ticks
+                  callback: function(value, index, values) {
+                      return value + ' EOS' ;
+                  }
+              }
+
+}]
+        },
+    title: {
+      display: true,
+      text: 'Daily Volume (EOS)',
+      fontSize: 18
+    }
+  }
+});
+/**************************************************/
+// TRANSACTIONS
+/**************************************************/
+new Chart(document.getElementById("TX"), {
+  type: 'line',
+  data: {
+    labels: datelabel,
+    datasets: [{
+        data: pokertx,
+        label: "EOS POKER",
+        borderColor: "#3e95cd",
+        fill: false
+      }, {
+        data: dicetx,
+        label: "BetDICE",
+        borderColor: "#8e5ea2",
+        fill: false
+      }, {
+        data: bettx,
+        label: "EOS BET",
+        borderColor: "#3cba9f",
+        fill: false
+      }
+    ]
+  },
+  options: {
+    legend: {
+      position: 'bottom',
+    },
+    scales: {
+            xAxes: [{
+                type: 'time',
+                distribution: 'linear',
+                gridLines: {
+                    display: true ,
+                    color: "#333",
+                    LineWidth: 0.1
+                          },
+                time: {
+                    displayFormats: {
+                        day: 'MMM D'
+                    }
+                }
+            }]
+,yAxes: [{
+  gridLines: {
+      display: true ,
+      color: "#333",
+      LineWidth: 0.1
+            },
+  ticks: {
+                  // Include a dollar sign in the ticks
+                  callback: function(value, index, values) {
+                      return value;
+                  }
+              }
+
+}]
+        },
+    title: {
+      display: true,
+      text: 'Daily Transactions (N)',
+      fontSize: 18
+    }
+  }
+});
+/**************************************************/
+// DIVIDENDS CHART
+/**************************************************/
+new Chart(document.getElementById("dividends"), {
+  type: 'line',
+  data: {
+    labels: datelabeldivs,
+    datasets: [{
+        data: pokerdivs,
+        label: "EOS POKER",
+        borderColor: "#3e95cd",
+        fill: false
+      }
+    ]
+  },
+  options: {
+    legend: {
+      position: 'bottom',
+    },
+    scales: {
+            xAxes: [{
+                type: 'time',
+                distribution: 'linear',
+                gridLines: {
+                    display: true ,
+                    color: "#333",
+                    LineWidth: 0.1
+                          },
+                time: {
+                    displayFormats: {
+                        day: 'MMM D'
+                    }
+                }
+            }]
+,yAxes: [{
+  gridLines: {
+      display: true ,
+      color: "#333",
+      LineWidth: 0.1
+            },
+  ticks: {
+                  // Include a dollar sign in the ticks
+                  callback: function(value, index, values) {
+                      return value + ' EOS';
+                  }
+              }
+
+}]
+        },
+    title: {
+      display: true,
+      text: 'Daily Dividends (EOS/10K POKER)',
+      fontSize: 18
+    }
+  }
+});
+</script>

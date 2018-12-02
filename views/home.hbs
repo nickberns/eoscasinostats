@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Overpass+Mono:300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+    <meta charset="utf-8">
+    <!-- <script src="/views/script.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="/views/style.css">
+    <title>Home page</title>
+  </head>
+  <body>
+
+
+
+  </head>
+    <div class="wrapper">
+      <h1>EOS CASINO STATS</h1>
+      <h2>EOS Casino DApps Statistics over Time</h2>
+</div>
+
+
+     <div class="row">
+       <div class="col-sm-6 md-6">
+          <canvas id="users" width="100" height="50"></canvas>
+          <canvas id="TX" width="100" height="50"></canvas>
+
+        </div>
+      <div class="col-sm-6 md-6">
+        <canvas id="volume" width="100" height="50"></canvas>
+          <canvas id="dividends" width="100" height="50"></canvas>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 md-12">
+    <div class="container">
+  <h2>EOS POKER</h2>
+  <p>Actual dividends payed out per 10K POKER staked</p>
+  <div class="table-responsive table-hover">
+  <table class="table">
+    <thead class="danger">
+      <tr>
+        <th>Date</th>
+        <th>Payout</th>
+        <th>ROI (%)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="active">
+        <td>17.11.2018</td>
+        <td>4.94 EOS</td>
+        <td>0.22%</td>
+      </tr>
+      <tr>
+        <td>18.11.2018</td>
+        <td>0 EOS</td>
+        <td>0%</td>
+      </tr>
+      <tr>
+        <td>19.11.2018</td>
+        <td>7.92 EOS</td>
+        <td>0.36%</td>
+      </tr>
+      <tr>
+        <td>20.11.2018</td>
+        <td>19.22 EOS</td>
+        <td>0.87%</td>
+      </tr>
+      <tr>
+        <td>21.11.2018</td>
+        <td>8.96 EOS</td>
+        <td>0.38%</td>
+      </tr>
+      <tr>
+        <td>22.11.2018</td>
+        <td>1.75 EOS</td>
+        <td>0.07%</td>
+      </tr>
+      <tr>
+        <td>23.11.2018</td>
+        <td>11.23 EOS</td>
+        <td>0.47%</td>
+      </tr>
+      <tr>
+        <td>24.11.2018</td>
+        <td>11.48 EOS</td>
+        <td>0.48%</td>
+      </tr>
+      <tr>
+        <td>25.11.2018</td>
+        <td>2.65 EOS</td>
+        <td>0.11%</td>
+      </tr>
+      <tr>
+        <td>26.11.2018</td>
+        <td>17.58 EOS</td>
+        <td>0.74%</td>
+      </tr>
+      <tr>
+        <td>27.11.2018</td>
+        <td>3.11 EOS</td>
+        <td>0.13%</td>
+      </tr>
+      <tr>
+        <td>28.11.2018</td>
+        <td>2.11 EOS</td>
+        <td>0.09%</td>
+      </tr>
+      <tr>
+        <td>29.11.2018</td>
+        <td>3.97 EOS</td>
+        <td>0.13%</td>
+      </tr>
+      <tr>
+        <td>30.11.2018</td>
+        <td>8.13 EOS</td>
+        <td>0.34%</td>
+      </tr>
+      <tr>
+        <td>01.12.2018</td>
+        <td>2.97 EOS</td>
+        <td>0.12%</td>
+      </tr>
+      <tr>
+        <td>02.12.2018</td>
+        <td>1.49 EOS</td>
+        <td>0.06%</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+
+</div>
+</div>
+
+
+    <div id="footer" class="row">
+       <div class="col-sm-12 md-12">
+          {{> footer}}
+    </div>
+</div>
+  </body>
+</html>
+{{> data}}
+{{> plot}}
