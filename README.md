@@ -6,3 +6,6 @@ How can stakeholders measure progress of the EOS based Casino Dapps? Currently, 
 
 ## Solution
 I've created charts that compare adoption of Casinos over time and capture essential marketshare  indicators such as users, transcations and volume per day. Additionaly I am monitoring the actual dividents of EOS POKER.
+
+# Live URL
+(https://eoscasinostats.herokuapp.com)[https://eoscasinostats.herokuapp.com]
