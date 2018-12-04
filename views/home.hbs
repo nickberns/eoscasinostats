@@ -10,42 +10,34 @@
     <link rel="stylesheet" type="text/css" href="/views/style.css">
     <title>EOS Casino Stats | Monitor EOS Casino Dapps Progress</title>
 
-  <meta name="description" content="Statistics related to the growth and progress of EOS based decentralized 
+  <meta name="description" content="Statistics related to the growth and progress of EOS based decentralized
   gambling Dapps. Look at the bigger picture. Be in the know." />
 
   <meta property="og:image" content="https://cdn.steemitimages.com/DQmcZj5aiaGTWKsbURpcdNyihYzjuFrN9yFfezcKGTNqG9f/eos-casino-statistics.jpg">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">  
+  <meta property="og:image:height" content="630">
 
   <meta name="keywords" content="EOS, eos, EOSIO, eosio, DAPPS, DApps, Casino Dapps, Gambling Dapps, EOS Gambling" />
   <meta name="Robots" content="index,follow" />
 
   </head>
   <body>
-
-
-
   </head>
     <div class="wrapper">
       <h1>EOS CASINO STATS</h1>
       <h2>EOS Casino DApps Statistics over Time</h2>
-</div>
-
-
-     <div class="row">
+    </div>
+    <div class="row">
        <div class="col-sm-6 md-6">
           <canvas id="users" width="100" height="50"></canvas>
           <canvas id="TX" width="100" height="50"></canvas>
-
         </div>
       <div class="col-sm-6 md-6">
-        <canvas id="volume" width="100" height="50"></canvas>
+          <canvas id="volume" width="100" height="50"></canvas>
           <canvas id="dividends" width="100" height="50"></canvas>
-
       </div>
     </div>
-
     <div class="row">
       <div class="col-sm-12 md-12">
     <div class="container">
@@ -60,112 +52,30 @@
         <th>ROI (%)</th>
       </tr>
     </thead>
-    <tbody>
-      <tr class="active">
-        <td>17.11.2018</td>
-        <td>4.94 EOS</td>
-        <td>0.22%</td>
-      </tr>
-      <tr>
-        <td>18.11.2018</td>
-        <td>0 EOS</td>
-        <td>0%</td>
-      </tr>
-      <tr>
-        <td>19.11.2018</td>
-        <td>7.92 EOS</td>
-        <td>0.36%</td>
-      </tr>
-      <tr>
-        <td>20.11.2018</td>
-        <td>19.22 EOS</td>
-        <td>0.87%</td>
-      </tr>
-      <tr>
-        <td>21.11.2018</td>
-        <td>8.96 EOS</td>
-        <td>0.38%</td>
-      </tr>
-      <tr>
-        <td>22.11.2018</td>
-        <td>1.75 EOS</td>
-        <td>0.07%</td>
-      </tr>
-      <tr>
-        <td>23.11.2018</td>
-        <td>11.23 EOS</td>
-        <td>0.47%</td>
-      </tr>
-      <tr>
-        <td>24.11.2018</td>
-        <td>11.48 EOS</td>
-        <td>0.48%</td>
-      </tr>
-      <tr>
-        <td>25.11.2018</td>
-        <td>2.65 EOS</td>
-        <td>0.11%</td>
-      </tr>
-      <tr>
-        <td>26.11.2018</td>
-        <td>17.58 EOS</td>
-        <td>0.74%</td>
-      </tr>
-      <tr>
-        <td>27.11.2018</td>
-        <td>3.11 EOS</td>
-        <td>0.13%</td>
-      </tr>
-      <tr>
-        <td>28.11.2018</td>
-        <td>2.11 EOS</td>
-        <td>0.09%</td>
-      </tr>
-      <tr>
-        <td>29.11.2018</td>
-        <td>3.97 EOS</td>
-        <td>0.13%</td>
-      </tr>
-      <tr>
-        <td>30.11.2018</td>
-        <td>8.13 EOS</td>
-        <td>0.34%</td>
-      </tr>
-      <tr>
-        <td>01.12.2018</td>
-        <td>2.97 EOS</td>
-        <td>0.12%</td>
-      </tr>
-      <tr>
-        <td>02.12.2018</td>
-        <td>1.49 EOS</td>
-        <td>0.06%</td>
-      </tr>
-      <tr>
-        <td>03.12.2018</td>
-        <td>18.10 EOS</td>
-        <td>0.75%</td>
-      </tr>
-      <tr>
-        <td>04.12.2018</td>
-        <td>24.93 EOS</td>
-        <td>1.04%</td>
-      </tr>
-    </tbody>
+      <tbody id="demo"></tbody>
   </table>
   </div>
 </div>
-
 </div>
 </div>
-
-
     <div id="footer" class="row">
        <div class="col-sm-12 md-12">
           {{> footer}}
     </div>
 </div>
-  </body>
-</html>
 {{> data}}
 {{> plot}}
+<script>
+var datelabeldivsrev=datelabeldivs.reverse();
+var pokerdivsrev=pokerdivs.reverse();
+var percent = pokerdivsrev.map(x => (x/2396*100).toFixed(2));
+var demoP = document.getElementById("demo");
+  for(i=0; i<datelabeldivs.length;i++){
+    demoP.innerHTML = demoP.innerHTML + "<tr><td>" + datelabeldivsrev[i] + "</td><td>" + pokerdivsrev[i] +"</td><td>" + percent[i] + "%</td></tr>";
+    }
+</script>
+
+</table>
+
+</body>
+</html>
