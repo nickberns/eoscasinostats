@@ -10,4 +10,4 @@ I've created charts that compare adoption of Casinos over time and capture essen
 # Get it
 https://eoscasinostats.herokuapp.com
 
-ShortURL: bit.ly/eoscasinostats
+https://bit.ly/eoscasinostats
