@@ -1,4 +1,17 @@
 <script>
+/**************************************************/
+// DRY COLORS
+/**************************************************/
+var COLOR_1="#3e95cd";
+var COLOR_2="#8e5ea2";
+var COLOR_3="#3cba9f";
+var COLOR_4="#016fb9";
+var COLOR_5="#470024";
+var COLOR_6="#dfbbb1";
+var COLOR_7="#f56476";
+var COLOR_8="#98dfaf";
+var COLOR_9="#fc9f5b";
+var COLOR_10="#fbd1a2";
 
 /**************************************************/
 // USERS
@@ -8,19 +21,54 @@ new Chart(document.getElementById("users"), {
   data: {
     labels: datelabel,
     datasets: [{
-        data: pokerusers,
+        data: poker_u,
         label: "EOS POKER",
-        borderColor: "#3e95cd",
+        borderColor: COLOR_1,
         fill: false
       }, {
-        data: diceusers,
+        data: dice_u,
         label: "BetDICE",
-        borderColor: "#8e5ea2",
+        borderColor: COLOR_2,
         fill: false
       }, {
-        data: betusers,
+        data: bet_u,
         label: "EOS BET",
-        borderColor: "#3cba9f",
+        borderColor: COLOR_3,
+        fill: false
+      }, {
+        data: farmeos_u,
+        label: "FARMEOS",
+        borderColor: COLOR_4,
+        fill: false
+      }, {
+        data: funcity_u,
+        label: "FunCity",
+        borderColor: COLOR_5,
+        fill: false
+      }, {
+        data: royalvegas_u,
+        label: "ROVegas",
+        borderColor: COLOR_6,
+        fill: false
+      }, {
+        data: endlessdice_u,
+        label: "END DICE",
+        borderColor: COLOR_7,
+        fill: false
+      }, {
+        data: kuai3_u,
+        label: "Kuai3",
+        borderColor: COLOR_8,
+        fill: false
+      }, {
+        data: eosluck_u,
+        label: "EOS LUCK",
+        borderColor: COLOR_9,
+        fill: false
+      }, {
+        data: eosmax_u,
+        label: "EOS MAX",
+        borderColor: COLOR_10,
         fill: false
       }
     ]
@@ -63,7 +111,7 @@ new Chart(document.getElementById("users"), {
     title: {
       display: true,
       fontSize: 18,
-      text: 'Daily Users'
+      text: 'Daily Users : Click on labels to filter'
     }
   }
 });
@@ -75,19 +123,54 @@ new Chart(document.getElementById("volume"), {
   data: {
     labels: datelabel,
     datasets: [{
-        data: pokervolume,
+        data: poker_v,
         label: "EOS POKER",
-        borderColor: "#3e95cd",
+        borderColor: COLOR_1,
         fill: false
       }, {
-        data: dicevolume,
+        data: dice_v,
         label: "BetDICE",
-        borderColor: "#8e5ea2",
+        borderColor: COLOR_2,
         fill: false
       }, {
-        data: betvolume,
+        data: bet_v,
         label: "EOS BET",
-        borderColor: "#3cba9f",
+        borderColor: COLOR_3,
+        fill: false
+      }, {
+        data: farmeos_v,
+        label: "FARMEOS",
+        borderColor: COLOR_4,
+        fill: false
+      }, {
+        data: funcity_v,
+        label: "FUNCITY",
+        borderColor: COLOR_5,
+        fill: false
+      }, {
+        data: royalvegas_v,
+        label: "ROVegas",
+        borderColor: COLOR_6,
+        fill: false
+      }, {
+        data: endlessdice_v,
+        label: "EndlessDice",
+        borderColor: COLOR_7,
+        fill: false
+      }, {
+        data: kuai3_v,
+        label: "Kuai3",
+        borderColor: COLOR_8,
+        fill: false
+      }, {
+        data: eosluck_v,
+        label: "EOSLUCK",
+        borderColor: COLOR_9,
+        fill: false
+      }, {
+        data: eosmax_v,
+        label: "EOS Max",
+        borderColor: COLOR_10,
         fill: false
       }
     ]
@@ -128,7 +211,7 @@ new Chart(document.getElementById("volume"), {
         },
     title: {
       display: true,
-      text: 'Daily Volume (EOS)',
+      text: 'Daily Volume (EOS) : Click on labels to filter',
       fontSize: 18
     }
   }
@@ -141,19 +224,54 @@ new Chart(document.getElementById("TX"), {
   data: {
     labels: datelabel,
     datasets: [{
-        data: pokertx,
+        data: poker_t,
         label: "EOS POKER",
-        borderColor: "#3e95cd",
+        borderColor: COLOR_1,
         fill: false
       }, {
-        data: dicetx,
+        data: dice_t,
         label: "BetDICE",
-        borderColor: "#8e5ea2",
+        borderColor: COLOR_2,
         fill: false
       }, {
-        data: bettx,
+        data: bet_t,
         label: "EOS BET",
-        borderColor: "#3cba9f",
+        borderColor: COLOR_3,
+        fill: false
+      }, {
+        data: farmeos_t,
+        label: "FarmEOS",
+        borderColor: COLOR_4,
+        fill: false
+      }, {
+        data: funcity_t,
+        label: "FunCity",
+        borderColor: COLOR_5,
+        fill: false
+      }, {
+        data: royalvegas_t,
+        label: "ROVegas",
+        borderColor: COLOR_6,
+        fill: false
+      }, {
+        data: endlessdice_t,
+        label: "EndlessDice",
+        borderColor: COLOR_7,
+        fill: false
+      }, {
+        data: kuai3_t,
+        label: "Kuai3",
+        borderColor: COLOR_8,
+        fill: false
+      }, {
+        data: eosluck_t,
+        label: "EOSLUCK",
+        borderColor: COLOR_9,
+        fill: false
+      }, {
+        data: eosmax_t,
+        label: "EOS Max",
+        borderColor: COLOR_10,
         fill: false
       }
     ]
@@ -194,7 +312,7 @@ new Chart(document.getElementById("TX"), {
         },
     title: {
       display: true,
-      text: 'Daily Transactions (N)',
+      text: 'Daily Transactions (N) : Click on labels to filter',
       fontSize: 18
     }
   }
