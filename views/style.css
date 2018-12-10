@@ -50,3 +50,58 @@ thead{
   color: white;
   /* width: 500px !important; */
 }
+
+.banner{
+  margin-top: 10px;
+  border: solid 2px;
+  background-color: #222;
+  padding: 30px 10px 30px 10px;
+}
+.banner-area{
+  margin-top: 50px;
+}
+
+#btnpoker{
+  background-color: #3e95cd;
+  color: white;
+}
+#btndice{
+  background-color: #8e5ea2;
+  color: white;
+}
+
+#btneosbet{
+  background-color: #3cba9f;
+  color: white;
+}
+#btnfarmeos{
+  background-color: #016fb9;
+  color: white;
+}
+#btnfuncity{
+  background-color:#470024;
+  color: white;
+}
+
+#btnrovegas{
+  background-color: #dfbbb1;
+  color: white;
+}
+
+#btnendless
+{
+  background-color: #f56476;
+  color: white;
+}
+#btnkuai3{
+background-color: #98dfaf;
+color: white;
+}
+#btneosluck{
+  background-color: #fc9f5b;
+  color: white;
+}
+#btneosmax{
+  background-color: #fbd1a2;
+  color: white;
+}
