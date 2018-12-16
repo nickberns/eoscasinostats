@@ -12,6 +12,7 @@ var COLOR_7="#f56476";
 var COLOR_8="#98dfaf";
 var COLOR_9="#fc9f5b";
 var COLOR_10="#fbd1a2";
+var COLOR_11="#ecc214";
 
 /**************************************************/
 // USERS
@@ -70,6 +71,11 @@ new Chart(document.getElementById("users"), {
         label: "EOS MAX",
         borderColor: COLOR_10,
         fill: false
+      }, {
+        data: tobet_u,
+        label: "TOBET",
+        borderColor: COLOR_11,
+        fill: false
       }
     ]
   },
@@ -111,7 +117,7 @@ new Chart(document.getElementById("users"), {
     title: {
       display: true,
       fontSize: 18,
-      text: 'Daily Users : Click on labels to filter'
+      text: 'Daily Users (N) 💡 Click on labels to filter'
     }
   }
 });
@@ -172,6 +178,11 @@ new Chart(document.getElementById("volume"), {
         label: "EOS Max",
         borderColor: COLOR_10,
         fill: false
+      }, {
+        data: tobet_v,
+        label: "TOBET",
+        borderColor: COLOR_11,
+        fill: false
       }
     ]
   },
@@ -211,7 +222,7 @@ new Chart(document.getElementById("volume"), {
         },
     title: {
       display: true,
-      text: 'Daily Volume (EOS) : Click on labels to filter',
+      text: 'Daily Volume (EOS) 💡 Click on labels to filter',
       fontSize: 18
     }
   }
@@ -283,6 +294,12 @@ new Chart(document.getElementById("TX"), {
         borderColor: COLOR_10,
         // lineTension: 0,
         fill: false
+      }, {
+        data: tobet_t,
+        label: "TOBET",
+        borderColor: COLOR_11,
+        // lineTension: 0,
+        fill: false
       }
     ]
   },
@@ -322,7 +339,7 @@ new Chart(document.getElementById("TX"), {
         },
     title: {
       display: true,
-      text: 'Daily Transactions (N) : Click on labels to filter',
+      text: 'Daily Transactions (N) 💡 Click on labels to filter',
       fontSize: 18
     }
   }

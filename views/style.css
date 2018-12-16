@@ -20,7 +20,7 @@ h1 {
 h2 {
   font-weight: 200;
   font-size: 1.2em;
-  margin: 0 0 50px;
+  margin: 0 0 10px;
   color: #999;
 }
 
@@ -58,7 +58,8 @@ thead{
   padding: 30px 10px 30px 10px;
 }
 .banner-area{
-  margin-top: 50px;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 #btnpoker{
@@ -104,4 +105,36 @@ color: white;
 #btneosmax{
   background-color: #fbd1a2;
   color: white;
+}
+#btntobet{
+  background-color: #ecc214;
+  color: white;
+}
+/* .chart-containcer{
+margin: 50px 50px 50px 50px;
+} */
+/* .alert-bar{
+  background-color: grey;
+  color: white;
+} */
+
+#message {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f4511e;
+    /*background-color: #f78561;*/
+    color: white;
+    z-index: 999;
+}
+#inner-message {
+    margin: 0 auto;
+}
+.beta{
+  font-size: 20px;
+  color: #999;
+}
+.navbar{
+  margin-top: 50px;
 }
