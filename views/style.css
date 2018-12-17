@@ -123,9 +123,10 @@ margin: 50px 50px 50px 50px;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #f4511e;
+    background-color: white;
+    /*#f4511e;*/
     /*background-color: #f78561;*/
-    color: white;
+    color: black;
     z-index: 999;
 }
 #inner-message {
