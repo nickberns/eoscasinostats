@@ -123,10 +123,10 @@ margin: 50px 50px 50px 50px;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #bbbbbb;
+    background-color: #ddd;
     /*#f4511e;*/
     /*background-color: #f78561;*/
-    color: white;
+    color: #333;
     z-index: 999;
 }
 #inner-message {
