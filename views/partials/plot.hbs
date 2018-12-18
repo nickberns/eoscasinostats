@@ -345,7 +345,7 @@ new Chart(document.getElementById("TX"), {
   }
 });
 /**************************************************/
-// DIVIDENDS CHART
+// DIVIDENDS CHART - POKER
 /**************************************************/
 new Chart(document.getElementById("dividends"), {
   type: 'line',
@@ -396,6 +396,59 @@ new Chart(document.getElementById("dividends"), {
     title: {
       display: true,
       text: 'Daily Dividends (EOS/10K POKER)',
+      fontSize: 18
+    }
+  }
+});
+new Chart(document.getElementById("dicedivs"), {
+  type: 'line',
+  data: {
+    labels: dicedate,
+    datasets: [{
+        data: dicedivs,
+        label: "DICE",
+        borderColor: "#198c36",
+        fill: false
+      }
+    ]
+  },
+  options: {
+    legend: {
+      position: 'bottom',
+    },
+    scales: {
+            xAxes: [{
+                type: 'time',
+                distribution: 'linear',
+                gridLines: {
+                    display: true ,
+                    color: "#333",
+                    LineWidth: 0.1
+                          },
+                time: {
+                    displayFormats: {
+                        day: 'MMM D'
+                    }
+                }
+            }]
+,yAxes: [{
+  gridLines: {
+      display: true ,
+      color: "#333",
+      LineWidth: 0.1
+            },
+  ticks: {
+                  // Include a dollar sign in the ticks
+                  callback: function(value, index, values) {
+                      return value + ' %';
+                  }
+              }
+
+}]
+        },
+    title: {
+      display: true,
+      text: 'Daily Dividends (%)',
       fontSize: 18
     }
   }
