@@ -1,0 +1,141 @@
+body {
+  font-family: Helvetica Neue, Arial, sans-serif;
+  text-align: center;
+  background-color: black;
+  padding: 20px 80px 80px 20px;
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: 50px auto;
+}
+
+h1 {
+  font-weight: 200;
+  font-size: 3em;
+  margin: 0 0 0.1em 0;
+  color: #555;
+}
+
+h2 {
+  font-weight: 200;
+  font-size: 1.2em;
+  margin: 0 0 10px;
+  color: #999;
+}
+
+canvas{
+  margin-top: 40px;
+}
+
+.table{
+  color: #b0b0b0;
+}
+
+p{
+  color: #b0b0b0;
+}
+
+.container{
+  margin-top: 50px;
+}
+
+td:nth-child(3){
+  color: green;
+}
+thead{
+  background-color: #222;
+}
+#footer{
+  color: white;
+  /* width: 500px !important; */
+}
+
+.banner{
+  margin-top: 10px;
+  border: solid 2px;
+  background-color: #222;
+  padding: 30px 10px 30px 10px;
+}
+.banner-area{
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+#btnpoker{
+  background-color: #3e95cd;
+  color: white;
+}
+#btndice{
+  background-color: #8e5ea2;
+  color: white;
+}
+
+#btneosbet{
+  background-color: #3cba9f;
+  color: white;
+}
+#btnfarmeos{
+  background-color: #016fb9;
+  color: white;
+}
+#btnfuncity{
+  background-color:#470024;
+  color: white;
+}
+
+#btnrovegas{
+  background-color: #dfbbb1;
+  color: white;
+}
+
+#btnendless
+{
+  background-color: #f56476;
+  color: white;
+}
+#btnkuai3{
+background-color: #98dfaf;
+color: white;
+}
+#btneosluck{
+  background-color: #fc9f5b;
+  color: white;
+}
+#btneosmax{
+  background-color: #fbd1a2;
+  color: white;
+}
+#btntobet{
+  background-color: #ecc214;
+  color: white;
+}
+/* .chart-containcer{
+margin: 50px 50px 50px 50px;
+} */
+/* .alert-bar{
+  background-color: grey;
+  color: white;
+} */
+
+#message {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ddd;
+    /*#f4511e;*/
+    /*background-color: #f78561;*/
+    color: #333;
+    z-index: 999;
+}
+#inner-message {
+    margin: 0 auto;
+}
+.beta{
+  font-size: 20px;
+  color: #999;
+}
+.navbar{
+  margin-top: 50px;
+}

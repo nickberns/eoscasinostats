@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Overpass+Mono:300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+    <meta charset="utf-8">
+    <!-- <script src="/views/script.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="/views/style.css">
+    <title>EOS Casino Stats | Your EOS Casino Monitor</title>
+
+  <meta name="description" content="Statistics related to the growth and progress of EOS based decentralized
+  gambling Dapps. Look at the bigger picture. Be in the know." />
+
+  <meta property="og:image" content="https://cdn.steemitimages.com/DQmcZj5aiaGTWKsbURpcdNyihYzjuFrN9yFfezcKGTNqG9f/eos-casino-statistics.jpg">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <meta name="keywords" content="EOS, eos, EOSIO, eosio, DAPPS, DApps, Casino Dapps, Gambling Dapps, EOS Gambling" />
+  <meta name="Robots" content="index,follow" />
+
+  {{> analytics}}
+  </head>
+  <body>
+  </head>
+
+<div id="message">
+    <div style="padding: 3px;">
+        <div id="inner-message" class="alert alert-error">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            Update: Issues resolved. 🤔 
+        </div>
+    </div>
+</div>
+
+ <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <a href="https://eospoker.win/?ref=philostratus" id="btnpoker" class="btn">EOS POKER</a>
+    <a href="https://betdice.one/?ref=philostratus" id="btndice" class="btn">BetDICE</a>
+    <a href="https://dice.eosbet.io/?ref=philostratus" id="btneosbet" class="btn">EOS BET</a>
+    <a href="https://tobet.io?ref=philostratus" id="btntobet" class="btn">TOBET</a>
+    <a href="https://farmeos.io/a/philostratus" id="btnfarmeos" class="btn">FarmEOS</a>
+    <a href="https://www.funcity.one/?ref=philostratus" id="btnfuncity" class="btn">FunCity</a>
+    <a href="https://jacks.rovegas.com/?ref=philostratus" id="btnrovegas" class="btn">Royal Online Vegas</a>
+    <a href="https://endless.game/dice?invite=philostratus" id="btnendless" class="btn">Endless Dice</a>
+    <a href="https://kuai3.io/eos/?ref=philostratus" id="btnkuai3" class="btn">Kuai3</a>
+    <a href="https://eosluck.one/?ref=philostratus" id="btneosluck" class="btn">EOS LUCK</a>
+    <a href="https://eosmax.io/#/?ref=philostratus" id="btneosmax" class="btn">EOS MAX</a>
+  </div>
+</nav>
+
+    <div class="wrapper">
+      <h1>EOS CASINO STATS <span class="beta"><sup>Beta</sup></span></h1>
+      <h2>Your EOS Casino Research Portal</h2>
+    </div>
+    <div class="row">
+       <div class="col-sm-6 md-6">
+          <canvas id="users" width="100" height="50"></canvas>
+          <canvas id="TX" width="100" height="50"></canvas>
+        </div>
+      <div class="col-sm-6 md-6">
+          <canvas id="volume" width="100" height="50"></canvas>
+          <canvas id="dividends" width="100" height="50"></canvas>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 md-12">
+    <div class="container">
+  <h2>DIVIDENDS COMPARISON</h2>
+  <p>Disclaimer: This is still experimental</p>
+  <div class="table-responsive table-hover">
+  <table class="table">
+    <thead class="danger">
+      <tr>
+        <th>Casino</th>
+        <th>Token</th>
+        <th>Avg. Daily ROI(%)</th>
+        <th>Community</th>
+        <th>Website</th>
+      </tr>
+    </thead>
+      <tbody>
+        <tr>
+          <td><a href="https://eospoker.win/?ref=philostratus" style="color:#b0b0b0;">BLACKJACK - EOS POKER</a></td>
+          <td>POKER</td>
+          <td>0.49%</td>
+          <td><a href="https://t.me/pokertothemoon">POKER Telegram</a></td>
+          <td><a href="https://eospoker.win/?ref=philostratus">Play POKER</a></td>
+        </tr>
+        <tr>
+          <td><a href="https://betdice.one/?ref=philostratus" style="color:#b0b0b0;">BetDICE</a></td>
+          <td>DICE</td>
+          <td>0.31%</td>
+          <td><a href="https://t.me/betdice">DICE Telegram</a></td>
+          <td><a href="https://betdice.one/?ref=philostratus">Play DICE</a></td>
+        </tr>
+        <tr>
+          <td><a href="https://tobet.io?ref=philostratus" style="color:#b0b0b0;">TOBET</a></td>
+          <td>TOB</td>
+          <td>0.92%</td>
+          <td><a href="https://t.me/tobet_EN">TOBET Telegram</a></td>
+          <td><a href="https://tobet.io?ref=philostratus">Play TOBET</a></td>
+        </tr>
+        <tr>
+          <td><a href="https://www.funcity.one/?ref=philostratus" style="color:#b0b0b0;">FunCity</a></td>
+          <td>CITY</td>
+          <td>0.84%</td>
+          <td><a href="https://t.me/FunCityone_community">FunCity Telegram</a></td>
+          <td><a href="https://www.funcity.one/?ref=philostratus">Play FunCity</a></td>
+        </tr>
+        <tr>
+        <td><a href="https://eosmax.io/#/?ref=philostratus" style="color:#b0b0b0;">EOS MAX</a></td>
+          <td>MAX</td>
+          <td>0.30%</td>
+          <td><a href="https://t.me/EOSMax_io">EOSMAX Telegram</a></td>
+          <td><a href="https://eosmax.io/#/?ref=philostratus">Play EOS MAX</a></td>
+        </tr>
+      </tbody>
+  </table>
+  </div>
+</div>
+</div>
+</div>
+
+
+    <div class="row">
+      <div class="col-sm-12 md-12">
+    <div class="container">
+  <h2>EOS POKER</h2>
+  <p>Actual dividends payed out per 10K POKER staked</p>
+  <div class="table-responsive table-hover">
+  <table class="table">
+    <thead class="danger">
+      <tr>
+        <th>Date</th>
+        <th>Payout</th>
+        <th>ROI (%)</th>
+      </tr>
+    </thead>
+      <tbody id="demo"></tbody>
+  </table>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="row">
+  <div class="col-sm-12 md-12">
+    <div class="banner-area">
+      <h2>Explore decentralized Casinos</h2>
+      <div class="banner">
+        <a href="https://eospoker.win/?ref=philostratus" id="btnpoker" class="btn">EOS POKER</a>
+        <a href="https://betdice.one/?ref=philostratus" id="btndice" class="btn">BetDICE</a>
+        <a href="https://tobet.io?ref=philostratus" id="btntobet" class="btn">TOBET</a>
+        <a href="https://dice.eosbet.io/?ref=philostratus" id="btneosbet" class="btn">EOS BET</a>
+        <a href="https://farmeos.io/a/philostratus" id="btnfarmeos" class="btn">FarmEOS</a>
+        <a href="https://www.funcity.one/?ref=philostratus" id="btnfuncity" class="btn">FunCity</a>
+        <a href="https://jacks.rovegas.com/?ref=philostratus" id="btnrovegas" class="btn">Royal Online Vegas</a>
+        <a href="https://endless.game/dice?invite=philostratus" id="btnendless" class="btn">Endless Dice</a>
+        <a href="https://kuai3.io/eos/?ref=philostratus" id="btnkuai3" class="btn">Kuai3</a>
+        <a href="https://eosluck.one/?ref=philostratus" id="btneosluck" class="btn">EOS LUCK</a>
+        <a href="https://eosmax.io/#/?ref=philostratus" id="btneosmax" class="btn">EOS MAX</a>
+
+      </div>
+      </div>
+  </div>
+</div>
+
+
+    <div id="footer" class="row">
+       <div class="col-sm-12 md-12">
+          {{> footer}}
+    </div>
+</div>
+{{> data}}
+{{> plot}}
+<script>
+var datelabeldivsrev=datelabeldivs.reverse();
+var pokerdivsrev=pokerdivs.reverse();
+var percent = pokerdivsrev.map(x => (x/2396*100).toFixed(2));
+var demoP = document.getElementById("demo");
+  for(i=0; i<datelabeldivs.length;i++){
+    demoP.innerHTML = demoP.innerHTML + "<tr><td>" + datelabeldivsrev[i] + "</td><td>" + pokerdivsrev[i] +"</td><td>" + percent[i] + "%</td></tr>";
+    }
+</script>
+
+</table>
+
+</body>
+</html>
